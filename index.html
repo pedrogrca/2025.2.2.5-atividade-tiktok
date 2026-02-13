@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TikTok Clone</title>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/tiktok.css">
+</head>
+<body>
+
+    <header class="desktop-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="/logo/logo completa tiktok.png" alt="TikTok" onerror="this.style.display='none'">
+                <h2 style="font-weight: 800; font-family: sans-serif; margin-left: 5px;"></h2> 
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Procurar">
+                <button class="btn-search"><i class="material-icons">search</i></button>
+            </div>
+
+            <div class="header-icons">
+                <button class="btn-upload">+ Carregar</button>
+                <i class="material-icons">send</i>
+                <i class="material-icons">inbox</i>
+                <i class="material-icons">account_circle</i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-layout">
+
+        <aside class="sidebar">
+            <nav>
+                <a href="#" class="active"><i class="material-icons">home</i> Para você</a>
+                <a href="#"><i class="material-icons">people</i> Seguindo</a>
+                <a href="#"><i class="material-icons">explore</i> Explorar</a>
+                <a href="#"><i class="material-icons">videocam</i> LIVE</a>
+            </nav>
+            <hr>
+            <div class="suggested-accounts">
+                <p>Contas sugeridas</p>
+                
+                <div class="account-row">
+                    <div class="avatar-circle" style="background-image: url('/imagens/logoifrntikoteko.jpeg');"></div>
+                    <div class="info">
+                        <strong>ifrncnat</strong>
+                        <span>IFRN - Central</span>
+                    </div>
+                </div>
+
+                <div class="account-row">
+                    <div class="avatar-circle" style="background-image: url('/imagens/lucena.jpg');"></div>
+                    <div class="info">
+                        <strong>prof.lucena</strong>
+                        <span>Prof. Lucena</span>
+                    </div>
+                </div>
+
+                <div class="account-row">
+                    <div class="avatar-circle" style="background-image: url('/imagens/jorgiano.jpg');"></div>
+                    <div class="info">
+                        <strong>prof_jorgiano</strong>
+                        <span>Prof. Jorgiano</span>
+                    </div>
+                </div>
+
+                <div class="account-row">
+                    <div class="avatar-circle" style="background-image: url('/imagens/braulio.png');"></div>
+                    <div class="info">
+                        <strong>braulio.prof</strong>
+                        <span>Prof. Braulio</span>
+                    </div>
+                </div>
+
+                <div class="account-row">
+                    <div class="avatar-circle" style="background-image: url('/imagens/minora.jpg');"></div>
+                    <div class="info">
+                        <strong>minora_prof</strong>
+                        <span>Prof. Minora</span>
+                    </div>
+                </div>
+
+            </div>
+        </aside>
+
+        <main class="feed">
+            
+            <div class="video-card">
+                
+                <video 
+                    id="myVideo"
+                    src="/imagens/ifrnvideo.mp4" 
+                    class="video-player" 
+                    loop 
+                    autoplay 
+                    muted 
+                    playsinline
+                    controls>
+                </video>
+
+                <div class="mobile-top-bar">
+                    <i class="material-icons">live_tv</i>
+                    <div class="tabs">
+                        <span>Seguindo</span>
+                        <span class="active">Para você</span>
+                    </div>
+                    <i class="material-icons">search</i>
+                </div>
+
+                <div class="sidebar-actions">
+                    <div class="action-btn profile">
+                        <img src="/imagens/logoifrntikoteko.jpeg" alt="User" onerror="this.src='https://via.placeholder.com/50'">
+                        <span class="plus-icon">+</span>
+                    </div>
+
+                    <div class="action-btn">
+                        <i class="material-icons shadow-icon">favorite</i>
+                        <span>954</span>
+                    </div>
+
+                    <div class="action-btn">
+                        <i class="material-icons shadow-icon">chat_bubble</i>
+                        <span>647</span>
+                    </div>
+
+                    <div class="action-btn">
+                        <i class="material-icons shadow-icon">bookmark</i>
+                        <span>324</span>
+                    </div>
+
+                    <div class="action-btn">
+                        <i class="material-icons shadow-icon">share</i>
+                        <span>Share</span>
+                    </div>
+
+                    <div class="action-btn music-disc">
+                        <i class="material-icons">album</i>
+                    </div>
+                </div>
+
+                <div class="video-footer-info">
+                    <div class="author">@ifrncnat</div>
+                    <div class="description">
+                        🚨MANDA PRA AQUELE AMIGO QUE SONHA EM ENTRAR NO IFRN💚 😎 #VemSerIFRN
+                    </div>
+                    <div class="music">
+                        <i class="material-icons">music_note</i> Beat It - Michael Jackson
+                    </div>
+                </div>
+
+            </div> 
+        </main>
+    </div>
+
+    <nav class="mobile-bottom-nav">
+        <a href="#" class="nav-item active">
+            <i class="material-icons">home</i>
+            <span>Início</span>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="material-icons">search</i>
+            <span>Descobrir</span>
+        </a>
+        <div class="nav-item">
+            <div class="btn-add-custom">+</div>
+        </div>
+        <a href="#" class="nav-item">
+            <i class="material-icons">inbox</i>
+            <span>Entrada</span>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="material-icons">person</i>
+            <span>Perfil</span>
+        </a>
+    </nav>
+        
+    <script>
+        // controles de midia para o video rodar de fundo
+        const video = document.getElementById('myVideo');
+        
+        document.body.addEventListener('click', () => {
+            if(video.muted) {
+                video.muted = false;
+            }
+        }, { once: true });
+
+        video.addEventListener('click', (e) => {
+            e.preventDefault(); 
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        });
+    </script>
+
+</body>
+</html>
